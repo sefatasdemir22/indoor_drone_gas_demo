@@ -74,6 +74,9 @@ gazebo worlds/simple_corridor_room.world
 # Demo ortamini baslatmak icin
 ./scripts/start_demo.sh
 
+# Tek komutluk simule demo icin
+./scripts/run_full_demo.sh random
+
 # Gaz haritalama dugumunu veya simule mapper akisini baslatmak icin
 ./scripts/run_mapper.sh
 
@@ -142,6 +145,18 @@ VMIN=0 VMAX=180 ./scripts/run_mapper.sh multi_all
 ```
 
 Not: CSV uretimi Matplotlib/NumPy gerektirmez. Heatmap uretimi icin Matplotlib gerekir; sistemde Matplotlib/NumPy uyumsuzlugu varsa script bunu dependency problemi olarak raporlar.
+
+### Full Simulated Demo
+
+Bu komut gercek drone ucurmaz, Gazebo/PX4/MAVSDK baslatmaz. Once gorev FSM akisini simule eder, sonra secilen gaz senaryosu icin CSV, JSON ve heatmap ciktılarini uretir.
+
+```bash
+./scripts/run_full_demo.sh random
+./scripts/run_full_demo.sh no_gas
+./scripts/run_full_demo.sh possible_gas_zone_1
+./scripts/run_full_demo.sh multi_1_2
+./scripts/run_full_demo.sh multi_all
+```
 
 ### Simulated Mission FSM Test
 
