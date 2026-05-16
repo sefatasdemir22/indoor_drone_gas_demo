@@ -196,6 +196,24 @@ Opsiyonel:
 python3 scripts/mavsdk_takeoff_land.py --system-address udp://:14540 --takeoff-altitude 2.0 --hover-seconds 5
 ```
 
+### Mission Manager MAVSDK Mode
+
+Bu mod henuz oda gezme veya waypoint gorevi yapmaz. Sadece `mission_manager.py` uzerinden calisan PX4 SITL'e baglanip temel takeoff/hover/land dogrulamasi yapar.
+
+Terminal 1:
+
+```bash
+cd /home/sefa/src/PX4-Autopilot
+make px4_sitl gazebo-classic_iris
+```
+
+Terminal 2:
+
+```bash
+cd /home/sefa/Desktop/indoor_drone_gas_demo
+python3 src/mission_manager.py --mode mavsdk --hover-seconds 5
+```
+
 Beklenen sonraki entegrasyonlar:
 
 - `ros2 launch indoor_drone_gas_demo demo.launch.py`
