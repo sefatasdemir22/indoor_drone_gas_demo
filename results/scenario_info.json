@@ -1,0 +1,102 @@
+{
+  "requested_scenario": "multi_all",
+  "scenario": "multi_source",
+  "active_zones": [
+    "possible_gas_zone_1",
+    "possible_gas_zone_2",
+    "possible_gas_zone_3",
+    "possible_gas_zone_4"
+  ],
+  "active_sources": [
+    {
+      "name": "possible_gas_zone_1",
+      "x": 5.0,
+      "y": 4.0
+    },
+    {
+      "name": "possible_gas_zone_2",
+      "x": 9.0,
+      "y": -4.0
+    },
+    {
+      "name": "possible_gas_zone_3",
+      "x": 13.0,
+      "y": 3.0
+    },
+    {
+      "name": "possible_gas_zone_4",
+      "x": 7.0,
+      "y": 0.0
+    }
+  ],
+  "background_ppm": 5.0,
+  "peak_ppm": 120.0,
+  "sigma": 1.8,
+  "noise_std": 1.2,
+  "sample_count": 220,
+  "seed": null,
+  "route_waypoints": [
+    {
+      "x": 0.0,
+      "y": 0.0
+    },
+    {
+      "x": 2.0,
+      "y": 0.0
+    },
+    {
+      "x": 5.0,
+      "y": 4.0
+    },
+    {
+      "x": 5.0,
+      "y": 0.0
+    },
+    {
+      "x": 7.0,
+      "y": 0.0
+    },
+    {
+      "x": 9.0,
+      "y": -4.0
+    },
+    {
+      "x": 9.0,
+      "y": 0.0
+    },
+    {
+      "x": 13.0,
+      "y": 3.0
+    },
+    {
+      "x": 13.0,
+      "y": 0.0
+    },
+    {
+      "x": 7.0,
+      "y": 0.0
+    },
+    {
+      "x": 0.0,
+      "y": 0.0
+    }
+  ],
+  "possible_gas_zones": {
+    "possible_gas_zone_1": {
+      "x": 5.0,
+      "y": 4.0
+    },
+    "possible_gas_zone_2": {
+      "x": 9.0,
+      "y": -4.0
+    },
+    "possible_gas_zone_3": {
+      "x": 13.0,
+      "y": 3.0
+    },
+    "possible_gas_zone_4": {
+      "x": 7.0,
+      "y": 0.0
+    }
+  }
+}
