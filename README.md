@@ -196,6 +196,30 @@ Opsiyonel:
 python3 scripts/mavsdk_takeoff_land.py --system-address udp://:14540 --takeoff-altitude 2.0 --hover-seconds 5
 ```
 
+### PX4 Custom World Startup Test
+
+Bu script PX4 iris modelini `worlds/simple_corridor_room.world` icinde baslatmayi dener. PX4 repo dosyalarini kalici olarak degistirmez; custom world dosyasi `PX4_SITL_WORLD` environment degiskeni ile absolute path olarak verilir.
+
+Terminal 1:
+
+```bash
+cd /home/sefa/Desktop/indoor_drone_gas_demo
+./scripts/start_px4_custom_world.sh --clean
+```
+
+Headless deneme:
+
+```bash
+./scripts/start_px4_custom_world.sh --clean --headless
+```
+
+Terminal 2:
+
+```bash
+cd /home/sefa/Desktop/indoor_drone_gas_demo
+python3 src/mission_manager.py --mode mavsdk --hover-seconds 5 --connection-timeout 30
+```
+
 ### Mission Manager MAVSDK Mode
 
 Bu mod henuz oda gezme veya waypoint gorevi yapmaz. Sadece `mission_manager.py` uzerinden calisan PX4 SITL'e baglanip temel takeoff/hover/land dogrulamasi yapar.

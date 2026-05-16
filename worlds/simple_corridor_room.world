@@ -25,6 +25,13 @@
       <shadows>true</shadows>
     </scene>
 
+    <gui fullscreen="0">
+      <camera name="user_camera">
+        <pose>7 -12 12 0 0.9 1.57</pose>
+        <view_controller>orbit</view_controller>
+      </camera>
+    </gui>
+
     <!-- START / SAFE_EXIT: takeoff, return, and landing area. Visual only. -->
     <model name="start_safe_exit_marker">
       <static>true</static>
